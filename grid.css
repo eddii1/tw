@@ -1,0 +1,36 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.wrapper > div{
+    padding: 20px;
+
+    background-color: black;
+    color: white;
+    border-style: dashed;
+    border-color: white;
+    border-width: 2px;
+}
+
+.c4{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background-color: pink;
+}
+
+.c4 > div{
+    background-color: pink;
+    color: black;
+    padding: 10px;
+}
+
+
+.c5{
+    grid-column: 1/3;
+}

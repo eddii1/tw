@@ -1,0 +1,71 @@
+.parinte{
+    display: grid;
+    border-style: solid;
+    border-color: green;
+    padding: 7px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr 1fr;
+    gap: 10px;
+    height: 500px;
+    width: 50%;
+}
+
+.parinte > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c1{
+    grid-column: 1/4;
+    background-color: orange;
+}
+
+.c2{
+    grid-row: 2/4;
+    background-color: pink;
+}
+
+.c3{
+    grid-column: 2/4;
+    background-color: red;
+}
+
+.c4{
+    grid-column: 2/3;
+    background-color: purple;
+}
+
+.c5{
+    grid-column: 3/4;
+    background-color: purple;
+}
+
+.c6{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    background-color: orange;
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+    .parinte{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .c1{
+        transition: background-color 2s;
+        transition: font-weight 3s;
+
+    }
+
+    .c1:hover{
+        font-weight: bold;
+        background-color: red;
+    }
+
+}
+
